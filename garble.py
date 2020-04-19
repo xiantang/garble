@@ -1,4 +1,4 @@
-from t import Google
+from google import Google
 
 
 class Garble():
@@ -17,7 +17,6 @@ class Garble():
             self.curr = translator.translate( 'zh-CN', 'fr',self.curr,)
             self.curr = translator.translate( 'fr', 'ko',self.curr,)
             self.curr = translator.translate( 'ko', 'zh-CN',self.curr,)
-
             time-=1
 
         return self.curr
